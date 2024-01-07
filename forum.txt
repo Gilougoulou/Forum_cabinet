@@ -1,0 +1,51 @@
+[architecture du projet]
+personnalisé, ne correspond pas à du MVC ou autre type d'architecture.
+
+[Description des dossiers]
+actions  :
+    > va stocker toutes les actions d'un utilisateur (saisi des infos)
+    > gestion des données formulaires
+    > gestion des requêtes
+    > crud
+    > back-end
+
+assets   :
+    > stocke fichier :
+        : css
+        : javascript
+
+
+includes :
+    > inclusion de fichier comme :
+        : header
+        : navbar de naviguation
+    > permet d'éviter la redondance des fichiers
+    > évite à corriger chaque page de cod en cas de modification de code
+
+
+Étape pour la construction du projet :
+> Inscription / connexion
+> publier question
+> afficher les questions publiées par l'utilisateur
+> modifier question
+> supprimer question
+> rechercher et afficher question
+> répondre à question
+> afficher le profil d'un utilisateur (avec ses publications)
+
+
+description des fichiers :
+[actions]
+> database.php              : connexion bdd, lancement d'une nouvelle session
+> publishQuestionAction.php : permet de publier une question [PHP - SQL]
+> loginAction.php           : traitement de donnée pour se connecter [PHP]
+> logoutAction.php          : permet de se déconnecter
+> securityAction.php        : permet de savoir à l'avance si un utilisateur est authentifié, autrement il est redirigé.e
+> signupAction.php          : traitement de donnée pour inscription
+
+> signup.php : page inscription /* créer un utilisateur admin */
+> [actions] signupAction.php : traitement de donnée de la page signup.php
+    : connexion BDD
+    : validation formulaire
+    : traitement de donnée d'inscription (nom, prénom, mail, mot de passe)
+    : redirection sur page d'accueil si tout est validé
